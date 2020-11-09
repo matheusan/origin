@@ -4,7 +4,7 @@ export const Wrapper: JSX.Element = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
   align-content: stretch;
 

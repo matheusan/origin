@@ -19,7 +19,7 @@ export const formatMoney = (
   round = false
 ): string => {
   if (!input || input === 0) {
-    return round ? `0${decimalSeparator}00` : '0';
+    return !round ? `0${decimalSeparator}00` : '0';
   }
 
   const stringInput = String(input);
