@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { format } from 'date-fns';
 
-import * as S from './styled.ts';
+import * as S from './styled';
 
 import Segment from '../Segment';
 import Header from '../Header';

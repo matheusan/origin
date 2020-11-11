@@ -16,15 +16,18 @@ const DatePicker: React.SFC<DatePickerProps> = ({
   onClickNext,
   onClickPrev
 }) => {
-  const handleKeyPress = useCallback(event => {
-    const { keyCode } = event;
-    if (keyCode === 39) {
-      onClickNext();
-    }
-    if (keyCode === 37) {
-      onClickPrev();
-    }
-  }, []);
+  const handleKeyPress = useCallback(
+    event => {
+      const { keyCode } = event;
+      if (keyCode === 39) {
+        onClickNext();
+      }
+      if (keyCode === 37) {
+        onClickPrev();
+      }
+    },
+    [onClickNext, onClickPrev]
+  );
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress);

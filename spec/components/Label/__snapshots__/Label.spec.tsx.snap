@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label renders 1`] = `
+<styled.div>
+  <styled.label
+    margin={true}
+    size={14}
+    smallsize={null}
+  >
+    Hello dolly
+  </styled.label>
+</styled.div>
+`;
+
+exports[`Label should render lavel with input 1`] = `
+<styled.div>
+  <styled.label
+    margin={true}
+    size={14}
+    smallsize={null}
+  >
+    My label
+  </styled.label>
+  <input />
+</styled.div>
+`;

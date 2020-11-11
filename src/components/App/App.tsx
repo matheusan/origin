@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { originDefaultTheme } from '../../theme/originDefaultTheme';
-import * as S from './styled.ts';
+import * as S from './styled';
 
 import Bar from '../Bar';
 import Icon from '../Icon';
@@ -14,7 +14,7 @@ const App: React.SFC = (): JSX.Element => (
     <SavingsProvider>
       <S.GlobalStyle />
       <Bar>
-        <Icon name="logo" height="32px" title="Use Origin" alt="Use Origin" />
+        <Icon name="logo" height="32px" />
       </Bar>
       <Savings />
     </SavingsProvider>

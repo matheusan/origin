@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Bar: JSX.Element = styled.div`
+export const Bar: JSX.Element = styled.div`
   display: flex;
   top: 0;
   left: 0;
@@ -15,5 +15,3 @@ const Bar: JSX.Element = styled.div`
     height: 56px;
   }
 `;
-
-export { Bar };

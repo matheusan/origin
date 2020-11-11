@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders 1`] = `
+<styled.div
+  nowrap={false}
+>
+  <styled.div
+    key="0"
+  >
+    <span>
+      One thing
+    </span>
+  </styled.div>
+  <styled.div
+    key="1"
+  >
+    <span>
+      Two things
+    </span>
+  </styled.div>
+</styled.div>
+`;

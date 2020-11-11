@@ -9,35 +9,32 @@ import logo from '../../assets/icons/logo.svg';
 import tip from '../../assets/icons/tip.svg';
 
 const icons = {
-  academy = academy,
-  arrow = arrow,
-  dollar = dollar,
-  house = house,
-  loading = loading,
-  logo = logo,
-  tip = tip
+  academy,
+  arrow,
+  dollar,
+  house,
+  loading,
+  logo,
+  tip
 };
 
 export type Icons = keyof typeof icons;
-export interface IconProps {
+export interface IconProps extends HTMLImageElement {
   name: Icons;
-  width?: string;
-  height?: string;
 }
 
-const Icon: React.SFC<IconProps & React.HTMLAttributes> = ({
+const Icon: React.SFC<IconProps> = ({
   name,
   width = '',
   height = '',
   ...otherProps
 }): JSX.Element | null => {
-  if (!icons[name]) {
-    return;
+  if (!Object.keys(icons).includes(name)) {
+    return <></>;
   }
 
-  return (
-    <img src={icons[name]} width={width} height={height} {...otherProps} />
-  );
+  const icon = icons[name];
+  return <img src={icon} width={width} height={height} {...otherProps} />;
 };
 
 export default Icon;

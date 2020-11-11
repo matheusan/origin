@@ -9,7 +9,7 @@ import { THOUSAND_SEPARATOR, DECIMAL_SEPARATOR } from '../../constants';
 export interface MoneyInputProps {
   value: number | null;
   thousandSeparator?: string;
-  decimal?: string;
+  decimalSeparator?: string;
   onChange?: () => null;
 }
 

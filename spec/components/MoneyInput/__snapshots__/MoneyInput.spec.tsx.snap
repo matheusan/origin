@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoneyInput renders 1`] = `
+<styled.div>
+  <Icon
+    name="dollar"
+  />
+  <styled.input
+    onChange={[Function]}
+    value="0.00"
+  />
+</styled.div>
+`;

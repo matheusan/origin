@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker renders 1`] = `
+<styled.div>
+  <styled.button>
+    <Icon
+      name="arrow"
+    />
+  </styled.button>
+  <styled.div>
+    <strong>
+      November
+    </strong>
+    2020
+  </styled.div>
+  <styled.button
+    direction="right"
+  >
+    <Icon
+      name="arrow"
+    />
+  </styled.button>
+</styled.div>
+`;
