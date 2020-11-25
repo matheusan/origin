@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button renders 1`] = `
-<styled.button>
+<styled.button
+  secondary={false}
+>
+  My button
+</styled.button>
+`;
+
+exports[`Button should render seconday color when prop is set 1`] = `
+<styled.button
+  secondary={true}
+>
   My button
 </styled.button>
 `;

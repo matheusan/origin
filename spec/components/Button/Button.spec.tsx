@@ -19,4 +19,9 @@ describe('Button', () => {
     wrapper.setProps({ loading: true });
     expect(wrapper.find('Icon').length).toBe(1);
   });
+
+  it('should render seconday color when prop is set', () => {
+    wrapper.setProps({ secondary: true });
+    expect(wrapper).toMatchSnapshot();
+  });
 });

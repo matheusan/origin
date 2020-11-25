@@ -21,6 +21,20 @@ exports[`Icon should render arrow icon 1`] = `
 />
 `;
 
+exports[`Icon should render baby icon 1`] = `
+<img
+  height=""
+  width=""
+/>
+`;
+
+exports[`Icon should render car icon 1`] = `
+<img
+  height=""
+  width=""
+/>
+`;
+
 exports[`Icon should render dollar icon 1`] = `
 <img
   height=""
@@ -49,7 +63,35 @@ exports[`Icon should render logo icon 1`] = `
 />
 `;
 
+exports[`Icon should render piggy icon 1`] = `
+<img
+  height=""
+  width=""
+/>
+`;
+
 exports[`Icon should render tip icon 1`] = `
+<img
+  height=""
+  width=""
+/>
+`;
+
+exports[`Icon should render vacation icon 1`] = `
+<img
+  height=""
+  width=""
+/>
+`;
+
+exports[`Icon should render vault icon 1`] = `
+<img
+  height=""
+  width=""
+/>
+`;
+
+exports[`Icon should render wedding icon 1`] = `
 <img
   height=""
   width=""

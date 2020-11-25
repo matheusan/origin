@@ -5,15 +5,17 @@ import Icon from '../Icon';
 
 export interface ButtonProps {
   loading: boolean;
+  secondary: boolean;
   onClick?: () => null;
 }
 
 const Button: React.SFC<ButtonProps> = ({
   onClick,
   loading = false,
+  secondary = false,
   children
 }) => (
-  <S.Button onClick={onClick}>
+  <S.Button onClick={onClick} secondary={secondary}>
     {loading ? <Icon name="loading" /> : children}
   </S.Button>
 );

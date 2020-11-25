@@ -7,6 +7,12 @@ import house from '../../assets/icons/house.svg';
 import loading from '../../assets/icons/loading.svg';
 import logo from '../../assets/icons/logo.svg';
 import tip from '../../assets/icons/tip.svg';
+import piggy from '../../assets/icons/piggy_academy.svg';
+import vacation from '../../assets/icons/vacation.svg';
+import car from '../../assets/icons/car.svg';
+import wedding from '../../assets/icons/wedding.svg';
+import vault from '../../assets/icons/vault.svg';
+import baby from '../../assets/icons/baby.svg';
 
 const icons = {
   academy,
@@ -15,7 +21,13 @@ const icons = {
   house,
   loading,
   logo,
-  tip
+  tip,
+  piggy,
+  vacation,
+  car,
+  wedding,
+  vault,
+  baby
 };
 
 export type Icons = keyof typeof icons;

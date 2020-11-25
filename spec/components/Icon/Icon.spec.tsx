@@ -11,14 +11,26 @@ describe('Icon', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  ['academy', 'arrow', 'dollar', 'house', 'loading', 'logo', 'tip'].forEach(
-    icon => {
-      it(`should render ${icon} icon`, () => {
-        wrapper = shallow(<Icon name={icon} />);
-        expect(wrapper).toMatchSnapshot();
-      });
-    }
-  );
+  [
+    'academy',
+    'arrow',
+    'dollar',
+    'house',
+    'loading',
+    'logo',
+    'tip',
+    'piggy',
+    'vacation',
+    'car',
+    'wedding',
+    'vault',
+    'baby'
+  ].forEach(icon => {
+    it(`should render ${icon} icon`, () => {
+      wrapper = shallow(<Icon name={icon} />);
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
 
   it('renders fragment if invalid icon name is given', () => {
     wrapper = shallow(<Icon name="noop" />);
