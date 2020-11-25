@@ -1,23 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header renders 1`] = `
-<styled.h1>
+<styled.h1
+  hard={false}
+>
   This is my header
 </styled.h1>
 `;
 
 exports[`Header when icon title should render all elements 1`] = `
-<styled.header>
+<styled.h1
+  hard={false}
+  noMargin={true}
+>
   <Icon
     name="arrow"
   />
-  <div>
-    <styled.h1>
-      My title
-    </styled.h1>
-    <styled.h2>
-      Subdescription
-    </styled.h2>
-  </div>
-</styled.header>
+  <br />
+  <Title>
+    My title
+  </Title>
+  <Description>
+    Subdescription
+  </Description>
+</styled.h1>
 `;

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
 import Money from '../../../src/components/Money';
+import { TextAlign } from '../../../src/types';
 
 describe('Money', () => {
   let wrapper: ShallowWrapper;
@@ -33,5 +34,13 @@ describe('Money', () => {
   it('should render round amount', () => {
     wrapper = shallow(<Money amount={12345.67} round />);
     expect(wrapper.text()).toBe('$12,345');
+  });
+
+  it('should align text to center', () => {
+    wrapper = shallow(
+      <Money amount={12345.67} round textAlign={TextAlign.center} />
+    );
+    const styled = wrapper.dive();
+    expect(styled.props().textAlign).toBe('center');
   });
 });

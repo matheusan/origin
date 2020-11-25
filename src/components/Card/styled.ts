@@ -15,6 +15,14 @@ export const Wrapper: JSX.Element = styled.div`
   border: 1px solid ${props => props.theme.colors.blueGray50};
 `;
 
+export const Single: JSX.Element = styled.div`
+  padding: 16px 28px;
+
+  @media only screen and (max-width: 360px) {
+    padding: 12px 32px;
+  }
+`;
+
 export const Top: JSX.Element = styled.div`
   padding: 24px 32px;
 

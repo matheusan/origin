@@ -13,6 +13,7 @@ import car from '../../assets/icons/car.svg';
 import wedding from '../../assets/icons/wedding.svg';
 import vault from '../../assets/icons/vault.svg';
 import baby from '../../assets/icons/baby.svg';
+import edit from '../../assets/icons/edit.svg';
 
 const icons = {
   academy,
@@ -27,7 +28,8 @@ const icons = {
   car,
   wedding,
   vault,
-  baby
+  baby,
+  edit
 };
 
 export type Icons = keyof typeof icons;

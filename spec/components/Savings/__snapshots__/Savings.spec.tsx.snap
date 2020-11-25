@@ -34,7 +34,9 @@ exports[`Savings renders 1`] = `
         className="sc-bdVaJa UoSJW"
       >
         <Header>
-          <styled.h1>
+          <styled.h1
+            hard={false}
+          >
             <StyledComponent
               forwardedComponent={
                 Object {
@@ -43,11 +45,13 @@ exports[`Savings renders 1`] = `
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-htpNat",
                     "isStatic": false,
-                    "lastClassName": "dknncv",
+                    "lastClassName": "gZtwfu",
                     "rules": Array [
                       "
   width: 100%;
-  margin: 48px 0 24px 0;
+  margin: ",
+                      [Function],
+                      ";
   padding: 0;
 
   text-align: center;
@@ -77,6 +81,7 @@ exports[`Savings renders 1`] = `
                 }
               }
               forwardedRef={null}
+              hard={false}
             >
               <h1
                 className="sc-htpNat dknncv"
@@ -140,42 +145,59 @@ exports[`Savings renders 1`] = `
                 <Header
                   icon="house"
                 >
-                  <styled.header>
+                  <styled.h1
+                    hard={false}
+                    noMargin={true}
+                  >
                     <StyledComponent
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-bxivhb",
+                            "componentId": "sc-htpNat",
                             "isStatic": false,
-                            "lastClassName": "wKMhV",
+                            "lastClassName": "gZtwfu",
                             "rules": Array [
                               "
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: stretch;
-  margin-bottom: 28px;
+  width: 100%;
+  margin: ",
+                              [Function],
+                              ";
+  padding: 0;
+
+  text-align: center;
+  font-weight: 400;
+  font-family: ",
+                              [Function],
+                              ";
+  color: ",
+                              [Function],
+                              ";
+
+  @media only screen and (max-width: 360px) {
+    margin: 32px 0 24px 0;
+    font-size: 18px;
+  }
 ",
                             ],
                           },
-                          "displayName": "styled.header",
+                          "displayName": "styled.h1",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-bxivhb",
-                          "target": "header",
+                          "styledComponentId": "sc-htpNat",
+                          "target": "h1",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
                       }
                       forwardedRef={null}
+                      hard={false}
+                      noMargin={true}
                     >
-                      <header
-                        className="sc-bxivhb wKMhV"
+                      <h1
+                        className="sc-htpNat gZtwfu"
                       >
                         <Icon
                           name="house"
@@ -185,105 +207,12 @@ exports[`Savings renders 1`] = `
                             width=""
                           />
                         </Icon>
-                        <div>
-                          <styled.h1>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-ifAKCX",
-                                    "isStatic": false,
-                                    "lastClassName": "gjJvBo",
-                                    "rules": Array [
-                                      "
-  width: 100%;
-  margin: 0 0 0 16px;
-  padding: 0;
-
-  line-height: 29px;
-  font-size: 24px;
-  font-weight: 500;
-  font-family: ",
-                                      [Function],
-                                      ";
-  color: ",
-                                      [Function],
-                                      ";
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.h1",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-ifAKCX",
-                                  "target": "h1",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <h1
-                                className="sc-ifAKCX gjJvBo"
-                              >
-                                Buy a house
-                              </h1>
-                            </StyledComponent>
-                          </styled.h1>
-                          <styled.h2>
-                            <StyledComponent
-                              forwardedComponent={
-                                Object {
-                                  "$$typeof": Symbol(react.forward_ref),
-                                  "attrs": Array [],
-                                  "componentStyle": ComponentStyle {
-                                    "componentId": "sc-EHOje",
-                                    "isStatic": false,
-                                    "lastClassName": "hMPSSQ",
-                                    "rules": Array [
-                                      "
-  width: 100%;
-  margin: 0 0 0 16px;
-  padding: 0;
-
-  line-height: 24px;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: ",
-                                      [Function],
-                                      ";
-  color: ",
-                                      [Function],
-                                      ";
-",
-                                    ],
-                                  },
-                                  "displayName": "styled.h2",
-                                  "foldedComponentIds": Array [],
-                                  "render": [Function],
-                                  "styledComponentId": "sc-EHOje",
-                                  "target": "h2",
-                                  "toString": [Function],
-                                  "warnTooManyClasses": [Function],
-                                  "withComponent": [Function],
-                                }
-                              }
-                              forwardedRef={null}
-                            >
-                              <h2
-                                className="sc-EHOje hMPSSQ"
-                              >
-                                SavingGoal
-                              </h2>
-                            </StyledComponent>
-                          </styled.h2>
-                        </div>
-                      </header>
+                        <br />
+                        <Title />
+                        <Description />
+                      </h1>
                     </StyledComponent>
-                  </styled.header>
+                  </styled.h1>
                 </Header>
                 <Grid>
                   <styled.div
@@ -417,6 +346,7 @@ exports[`Savings renders 1`] = `
                                         margin={true}
                                         size={14}
                                         smallsize={null}
+                                        textAlign="left"
                                       >
                                         <StyledComponent
                                           forwardedComponent={
@@ -426,7 +356,7 @@ exports[`Savings renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "sc-jTzLTM",
                                                 "isStatic": false,
-                                                "lastClassName": "jzykzi",
+                                                "lastClassName": "gmobCI",
                                                 "rules": Array [
                                                   "
   font-size: ",
@@ -439,6 +369,9 @@ exports[`Savings renders 1`] = `
                                                   [Function],
                                                   ";
   margin-bottom: ",
+                                                  [Function],
+                                                  ";
+  text-align: ",
                                                   [Function],
                                                   ";
 
@@ -464,9 +397,10 @@ exports[`Savings renders 1`] = `
                                           margin={true}
                                           size={14}
                                           smallsize={null}
+                                          textAlign="left"
                                         >
                                           <label
-                                            className="sc-jTzLTM ljSkAV"
+                                            className="sc-jTzLTM fYKCvP"
                                             size={14}
                                           >
                                             Total amount
@@ -685,6 +619,7 @@ exports[`Savings renders 1`] = `
                                         margin={true}
                                         size={14}
                                         smallsize={null}
+                                        textAlign="left"
                                       >
                                         <StyledComponent
                                           forwardedComponent={
@@ -694,7 +629,7 @@ exports[`Savings renders 1`] = `
                                               "componentStyle": ComponentStyle {
                                                 "componentId": "sc-jTzLTM",
                                                 "isStatic": false,
-                                                "lastClassName": "jzykzi",
+                                                "lastClassName": "gmobCI",
                                                 "rules": Array [
                                                   "
   font-size: ",
@@ -707,6 +642,9 @@ exports[`Savings renders 1`] = `
                                                   [Function],
                                                   ";
   margin-bottom: ",
+                                                  [Function],
+                                                  ";
+  text-align: ",
                                                   [Function],
                                                   ";
 
@@ -732,9 +670,10 @@ exports[`Savings renders 1`] = `
                                           margin={true}
                                           size={14}
                                           smallsize={null}
+                                          textAlign="left"
                                         >
                                           <label
-                                            className="sc-jTzLTM ljSkAV"
+                                            className="sc-jTzLTM fYKCvP"
                                             size={14}
                                           >
                                             Reach goal by
@@ -1025,9 +964,9 @@ exports[`Savings renders 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-jzJRlG",
+                                  "componentId": "sc-cSHVUG",
                                   "isStatic": false,
-                                  "lastClassName": "lcoGCj",
+                                  "lastClassName": "iXMCqj",
                                   "rules": Array [
                                     "
   padding: 24px 32px;
@@ -1041,7 +980,7 @@ exports[`Savings renders 1`] = `
                                 "displayName": "styled.div",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-jzJRlG",
+                                "styledComponentId": "sc-cSHVUG",
                                 "target": "div",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -1051,7 +990,7 @@ exports[`Savings renders 1`] = `
                             forwardedRef={null}
                           >
                             <div
-                              className="sc-jzJRlG lcoGCj"
+                              className="sc-cSHVUG iXMCqj"
                             >
                               <Grid
                                 nowrap={true}
@@ -1189,6 +1128,7 @@ exports[`Savings renders 1`] = `
                                                       margin={false}
                                                       size={20}
                                                       smallsize={18}
+                                                      textAlign="left"
                                                     >
                                                       <StyledComponent
                                                         forwardedComponent={
@@ -1198,7 +1138,7 @@ exports[`Savings renders 1`] = `
                                                             "componentStyle": ComponentStyle {
                                                               "componentId": "sc-jTzLTM",
                                                               "isStatic": false,
-                                                              "lastClassName": "jzykzi",
+                                                              "lastClassName": "gmobCI",
                                                               "rules": Array [
                                                                 "
   font-size: ",
@@ -1211,6 +1151,9 @@ exports[`Savings renders 1`] = `
                                                                 [Function],
                                                                 ";
   margin-bottom: ",
+                                                                [Function],
+                                                                ";
+  text-align: ",
                                                                 [Function],
                                                                 ";
 
@@ -1236,9 +1179,10 @@ exports[`Savings renders 1`] = `
                                                         margin={false}
                                                         size={20}
                                                         smallsize={18}
+                                                        textAlign="left"
                                                       >
                                                         <label
-                                                          className="sc-jTzLTM jzykzi"
+                                                          className="sc-jTzLTM gmobCI"
                                                           size={20}
                                                         >
                                                           Monthly amount
@@ -1302,16 +1246,18 @@ exports[`Savings renders 1`] = `
                                               amount={0}
                                               round={true}
                                             >
-                                              <styled.div>
+                                              <styled.div
+                                                textAlign="right"
+                                              >
                                                 <StyledComponent
                                                   forwardedComponent={
                                                     Object {
                                                       "$$typeof": Symbol(react.forward_ref),
                                                       "attrs": Array [],
                                                       "componentStyle": ComponentStyle {
-                                                        "componentId": "sc-kAzzGY",
+                                                        "componentId": "sc-chPdSV",
                                                         "isStatic": false,
-                                                        "lastClassName": "GgnEv",
+                                                        "lastClassName": "krLnoj",
                                                         "rules": Array [
                                                           "
   color: ",
@@ -1320,9 +1266,13 @@ exports[`Savings renders 1`] = `
   font-family: ",
                                                           [Function],
                                                           ";
-  font-size: 32px;
+  font-size: ",
+                                                          [Function],
+                                                          ";
   font-weight: 500;
-  text-align: right;
+  text-align: ",
+                                                          [Function],
+                                                          ";
 
   @media only screen and (max-width: 360px) {
     font-size: 24px;
@@ -1333,7 +1283,7 @@ exports[`Savings renders 1`] = `
                                                       "displayName": "styled.div",
                                                       "foldedComponentIds": Array [],
                                                       "render": [Function],
-                                                      "styledComponentId": "sc-kAzzGY",
+                                                      "styledComponentId": "sc-chPdSV",
                                                       "target": "div",
                                                       "toString": [Function],
                                                       "warnTooManyClasses": [Function],
@@ -1341,9 +1291,10 @@ exports[`Savings renders 1`] = `
                                                     }
                                                   }
                                                   forwardedRef={null}
+                                                  textAlign="right"
                                                 >
                                                   <div
-                                                    className="sc-kAzzGY GgnEv"
+                                                    className="sc-chPdSV krLnoj"
                                                   >
                                                     $
                                                     0
@@ -1368,9 +1319,9 @@ exports[`Savings renders 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-cSHVUG",
+                                  "componentId": "sc-kAzzGY",
                                   "isStatic": false,
-                                  "lastClassName": "gFBEac",
+                                  "lastClassName": "kZwyrp",
                                   "rules": Array [
                                     "
   padding: 24px 32px;
@@ -1394,7 +1345,7 @@ exports[`Savings renders 1`] = `
                                 "displayName": "styled.div",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-cSHVUG",
+                                "styledComponentId": "sc-kAzzGY",
                                 "target": "div",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -1404,7 +1355,7 @@ exports[`Savings renders 1`] = `
                             forwardedRef={null}
                           >
                             <div
-                              className="sc-cSHVUG gFBEac"
+                              className="sc-kAzzGY kZwyrp"
                             >
                               You’re planning 
                               <strong>
@@ -1434,24 +1385,33 @@ exports[`Savings renders 1`] = `
                   onClick={[Function]}
                 >
                   <styled.button
+                    flex={false}
                     onClick={[Function]}
+                    secondary={false}
                   >
                     <StyledComponent
+                      flex={false}
                       forwardedComponent={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-chPdSV",
+                            "componentId": "sc-kgoBCf",
                             "isStatic": false,
-                            "lastClassName": "jIrJpI",
+                            "lastClassName": "bXbLPW",
                             "rules": Array [
                               "
   display: block;
-  width: 320px;
-  height: 56px;
+  width: ",
+                              [Function],
+                              ";
+  height: ",
+                              [Function],
+                              ";
   margin: 0 auto;
-  border-radius: 32px;
+  border-radius: ",
+                              [Function],
+                              ";
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -1459,14 +1419,18 @@ exports[`Savings renders 1`] = `
   background-color: ",
                               [Function],
                               ";
+
   color: ",
                               [Function],
                               ";
+
   font-family: ",
                               [Function],
                               ";
   font-size: 16px;
-  line-height: 54px;
+  line-height: ",
+                              [Function],
+                              ";
   text-align: center;
 
   &:hover {
@@ -1480,7 +1444,7 @@ exports[`Savings renders 1`] = `
                           "displayName": "styled.button",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-chPdSV",
+                          "styledComponentId": "sc-kgoBCf",
                           "target": "button",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -1489,9 +1453,10 @@ exports[`Savings renders 1`] = `
                       }
                       forwardedRef={null}
                       onClick={[Function]}
+                      secondary={false}
                     >
                       <button
-                        className="sc-chPdSV jIrJpI"
+                        className="sc-kgoBCf bXbLPW"
                         onClick={[Function]}
                       >
                         Confirm

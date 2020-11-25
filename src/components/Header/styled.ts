@@ -2,13 +2,16 @@ import styled from 'styled-components';
 
 export const SingleTitle: JSX.Element = styled.h1`
   width: 100%;
-  margin: 48px 0 24px 0;
+  margin: ${props => (props.noMargin ? '0' : '48px 0 24px 0')};
   padding: 0;
 
   text-align: center;
   font-weight: 400;
   font-family: ${props => props.theme.fonts.primary};
-  color: ${props => props.theme.colors.brandColorPrimary};
+  color: ${props =>
+    props.hard
+      ? props.theme.colors.blueGray900
+      : props.theme.colors.brandColorPrimary};
 
   @media only screen and (max-width: 360px) {
     margin: 32px 0 24px 0;

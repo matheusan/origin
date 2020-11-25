@@ -1,12 +1,14 @@
 import * as React from 'react';
 
 import * as S from './styled';
+import { TextAlign } from '../../types';
 
 export interface LabelProps {
   text: string;
   size?: number;
   smallsize?: number;
   margin?: boolean;
+  textAlign?: TextAlign;
 }
 
 const Label: React.SFC<LabelProps> = ({
@@ -14,16 +16,27 @@ const Label: React.SFC<LabelProps> = ({
   size = 14,
   smallsize = null,
   margin = true,
+  textAlign = TextAlign.left,
   children
 }) => (
   <S.Wrapper>
     {text && (
-      <S.Label size={size} smallsize={smallsize} margin={margin}>
+      <S.Label
+        size={size}
+        smallsize={smallsize}
+        margin={margin}
+        textAlign={textAlign}
+      >
         {text}
       </S.Label>
     )}
     {!text ? (
-      <S.Label size={size} smallsize={smallsize} margin={margin}>
+      <S.Label
+        size={size}
+        smallsize={smallsize}
+        margin={margin}
+        textAlign={textAlign}
+      >
         {children}
       </S.Label>
     ) : (

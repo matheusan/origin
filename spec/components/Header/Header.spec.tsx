@@ -64,5 +64,11 @@ describe('Header', () => {
       );
       expect(wrapper.find(IconDescription).length).toBe(1);
     });
+
+    it('should render icon with description', () => {
+      wrapper = shallow(<Header icon="piggy">Description</Header>);
+      expect(wrapper.find('Icon').length).toBe(1);
+      expect(wrapper.text()).toContain('Description');
+    });
   });
 });

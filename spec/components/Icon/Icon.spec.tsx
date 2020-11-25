@@ -24,7 +24,8 @@ describe('Icon', () => {
     'car',
     'wedding',
     'vault',
-    'baby'
+    'baby',
+    'edit'
   ].forEach(icon => {
     it(`should render ${icon} icon`, () => {
       wrapper = shallow(<Icon name={icon} />);

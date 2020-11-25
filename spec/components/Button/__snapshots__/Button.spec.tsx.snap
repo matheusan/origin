@@ -2,6 +2,16 @@
 
 exports[`Button renders 1`] = `
 <styled.button
+  flex={false}
+  secondary={false}
+>
+  My button
+</styled.button>
+`;
+
+exports[`Button should render flex width when prop is set 1`] = `
+<styled.button
+  flex={true}
   secondary={false}
 >
   My button
@@ -10,6 +20,7 @@ exports[`Button renders 1`] = `
 
 exports[`Button should render seconday color when prop is set 1`] = `
 <styled.button
+  flex={false}
   secondary={true}
 >
   My button

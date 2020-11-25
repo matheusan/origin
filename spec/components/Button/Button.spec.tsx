@@ -24,4 +24,9 @@ describe('Button', () => {
     wrapper.setProps({ secondary: true });
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render flex width when prop is set', () => {
+    wrapper.setProps({ flex: true });
+    expect(wrapper).toMatchSnapshot();
+  });
 });

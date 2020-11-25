@@ -42,6 +42,13 @@ exports[`Icon should render dollar icon 1`] = `
 />
 `;
 
+exports[`Icon should render edit icon 1`] = `
+<img
+  height=""
+  width=""
+/>
+`;
+
 exports[`Icon should render house icon 1`] = `
 <img
   height=""

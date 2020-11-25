@@ -2,7 +2,7 @@ import * as React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 
 import Card from '../../../src/components/Card';
-import { Top, Bottom } from '../../../src/components/Card/styled';
+import { Top, Bottom, Single } from '../../../src/components/Card/styled';
 
 describe('Card', () => {
   const singleText = 'Single text';
@@ -45,5 +45,14 @@ describe('Card', () => {
       </Card>
     );
     expect(wrapper.find(Bottom).length).toBe(1);
+  });
+
+  it('should render single child element', () => {
+    wrapper = shallow(
+      <Card>
+        <Card.Single>{topText}</Card.Single>
+      </Card>
+    );
+    expect(wrapper.find(Single).length).toBe(1);
   });
 });
