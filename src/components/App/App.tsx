@@ -6,8 +6,8 @@ import * as S from './styled';
 
 import Bar from '../Bar';
 import Icon from '../Icon';
-import Savings from '../Savings';
 import SavingsProvider from '../../redux';
+import Goals from '../Goals';
 
 const App: React.SFC = (): JSX.Element => (
   <ThemeProvider theme={originDefaultTheme}>
@@ -16,7 +16,7 @@ const App: React.SFC = (): JSX.Element => (
       <Bar>
         <Icon name="logo" height="32px" />
       </Bar>
-      <Savings />
+      <Goals />
     </SavingsProvider>
   </ThemeProvider>
 );

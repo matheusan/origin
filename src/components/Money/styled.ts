@@ -7,7 +7,7 @@ export const Money: JSX.Element = styled.div`
   font-weight: 500;
   text-align: ${props => props.textAlign};
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 380px) {
     font-size: 24px;
   }
 `;

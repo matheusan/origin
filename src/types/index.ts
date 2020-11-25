@@ -8,6 +8,6 @@ export type Goal = {
   id: string;
   icon: string;
   title: string;
-  amount?: number;
-  date?: number;
+  totalAmount?: number;
+  targetDate?: number;
 };

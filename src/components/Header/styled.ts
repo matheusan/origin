@@ -7,13 +7,14 @@ export const SingleTitle: JSX.Element = styled.h1`
 
   text-align: center;
   font-weight: 400;
+  font-size: ${props => (props.size ? `${props.size}px` : '2em')};
   font-family: ${props => props.theme.fonts.primary};
   color: ${props =>
     props.hard
       ? props.theme.colors.blueGray900
       : props.theme.colors.brandColorPrimary};
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 380px) {
     margin: 32px 0 24px 0;
     font-size: 18px;
   }

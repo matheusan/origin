@@ -1,5 +1,12 @@
 import { SavingsProvider, useSavings } from './context';
-import { setAmount, addMonth, subtractMonth, save, saved } from './actions';
+import {
+  edit,
+  setAmount,
+  addMonth,
+  subtractMonth,
+  save,
+  saved
+} from './actions';
 import { initialState } from './reducer';
 import * as selectors from './selectors';
 
@@ -8,6 +15,7 @@ export {
   setAmount,
   addMonth,
   subtractMonth,
+  edit,
   save,
   saved,
   selectors,

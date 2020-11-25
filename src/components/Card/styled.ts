@@ -18,7 +18,7 @@ export const Wrapper: JSX.Element = styled.div`
 export const Single: JSX.Element = styled.div`
   padding: 16px 28px;
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 380px) {
     padding: 12px 32px;
   }
 `;
@@ -26,7 +26,7 @@ export const Single: JSX.Element = styled.div`
 export const Top: JSX.Element = styled.div`
   padding: 24px 32px;
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 380px) {
     padding: 24px 27px;
   }
 `;

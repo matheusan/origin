@@ -16,7 +16,7 @@ export const Label: JSX.Element = styled.label`
   margin-bottom: ${props => (!props.margin ? '0' : '8px')};
   text-align: ${props => props.textAlign};
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 380px) {
     font-size: ${props => props.smallsize || '12'}px;
   }
 `;

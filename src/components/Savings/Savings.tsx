@@ -27,7 +27,7 @@ import { DATE_FORMAT } from '../../constants';
 
 const Savings: React.FunctionComponent = (): JSX.Element => {
   const [state, dispatch] = useSavings();
-  const { totalAmount, targetDate, loading } = state;
+  const { loading } = state;
 
   const setTotalAmount = (e, newValue) => {
     const { value } = newValue;
@@ -39,6 +39,11 @@ const Savings: React.FunctionComponent = (): JSX.Element => {
   };
   const upMonth = () => dispatch(addMonth());
   const downMonth = () => dispatch(subtractMonth());
+
+  const title = selectors.getTitle(state);
+  const icon = selectors.getIcon(state);
+  const totalAmount = selectors.getTotalAmount(state);
+  const targetDate = selectors.getTargetDate(state);
   const totalMonths = selectors.getMonths(state);
   const monthlyAmounts = selectors.getMonthlyAmounts(state);
 
@@ -48,8 +53,8 @@ const Savings: React.FunctionComponent = (): JSX.Element => {
         Let&apos;s plan your <strong>saving goal.</strong>
       </Header>
       <Segment border>
-        <Header icon="house">
-          <Header.Title>Buy a house</Header.Title>
+        <Header icon={icon}>
+          <Header.Title>{title}</Header.Title>
           <Header.Description>SavingGoal</Header.Description>
         </Header>
         <Grid>

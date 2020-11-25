@@ -10,7 +10,7 @@ export const Segment: JSX.Element = styled.section`
   border-radius: 8px;
   box-shadow: 0px 16px 32px rgba(30, 42, 50, 0.38);
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 380px) {
     border-radius: 4px;
     padding: 24px;
   }

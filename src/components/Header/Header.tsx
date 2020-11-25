@@ -10,22 +10,30 @@ const Description = () => null;
 export interface HeaderProps {
   icon?: Icons;
   hard?: boolean;
+  size?: boolean;
+  noMargin?: boolean;
 }
 
 const Header: React.SFC<HeaderProps> = ({
   icon = null,
   hard = false,
+  size = false,
+  noMargin = false,
   children
 }): JSX.Element => {
   const title = findByType(children, Title);
   const description = findByType(children, Description);
   if (icon === null && !title && !description) {
-    return <S.SingleTitle hard={hard}>{children}</S.SingleTitle>;
+    return (
+      <S.SingleTitle hard={hard} size={size} noMargin={noMargin}>
+        {children}
+      </S.SingleTitle>
+    );
   }
 
-  if (icon !== null && children) {
+  if (icon !== null && !title && !description && children) {
     return (
-      <S.SingleTitle hard={hard} noMargin>
+      <S.SingleTitle hard={hard} noMargin={noMargin}>
         <DisplayIcon name={icon} />
         <br />
         {children}

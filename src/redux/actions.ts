@@ -1,5 +1,10 @@
 import { ACTION } from './reducer';
 
+export const edit = (goalId: string) => ({
+  type: ACTION.EDIT,
+  payload: goalId
+});
+
 export const setAmount = (amount: number) => ({
   type: ACTION.SET_AMOUNT,
   payload: amount

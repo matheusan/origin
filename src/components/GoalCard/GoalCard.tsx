@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { format } from 'date-fns';
 
 import * as S from './styled';
-import { TextAlign } from '../../types';
+import { Goal, TextAlign } from '../../types';
 
 import Icon, { Icons } from '../Icon';
 import Header from '../Header';
@@ -11,28 +12,21 @@ import Label from '../Label';
 import Money from '../Money';
 import Button from '../Button';
 
+import { DATE_COMPACT_FORMAT } from '../../constants';
+
 export interface GoalCardProps {
-  goal: {
-    icon: Icons;
-    title: string;
-    amount: number;
-    date: number;
-  };
-  onSet: () => null;
+  goal: Goal;
   onEdit: () => null;
 }
 
-const GoalCard: React.SFC<GoalCardProps> = ({
-  goal,
-  onSet,
-  onEdit
-}): JSX.Element => {
-  const { icon, title, amount, date } = goal;
-  const displayGoal = amount && amount !== null && date && date !== null;
+const GoalCard: React.SFC<GoalCardProps> = ({ goal, onEdit }): JSX.Element => {
+  const { icon, title, totalAmount, targetDate } = goal;
+  const displayGoal =
+    totalAmount && totalAmount !== null && targetDate && targetDate !== null;
   return (
     <S.Wrapper>
       {!displayGoal && <div></div>}
-      <Header hard icon={icon}>
+      <Header hard noMargin icon={icon}>
         {title}
       </Header>
       {displayGoal && (
@@ -48,7 +42,7 @@ const GoalCard: React.SFC<GoalCardProps> = ({
               >
                 <Money
                   round
-                  amount={23344}
+                  amount={totalAmount}
                   fontSize={14}
                   textAlign={TextAlign.center}
                 />
@@ -60,16 +54,18 @@ const GoalCard: React.SFC<GoalCardProps> = ({
                 textAlign={TextAlign.center}
                 text="Reach goal by"
               >
-                <strong>May 2020</strong>
+                <Header hard size={16} noMargin>{format(targetDate, DATE_COMPACT_FORMAT)}.</Header>
               </Label>
             </Grid>
           </Card.Single>
         </Card>
       )}
       {!displayGoal ? (
-        <Button flex>Setup goal</Button>
+        <Button flex onClick={onEdit}>
+          Setup goal
+        </Button>
       ) : (
-        <Button secondary>
+        <Button secondary onClick={onEdit}>
           Edit goal <Icon name="edit" />
         </Button>
       )}
